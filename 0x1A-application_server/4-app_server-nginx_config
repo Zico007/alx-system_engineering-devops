@@ -1,0 +1,11 @@
+server {
+    listen 80;
+    server_name 54.236.56.93;
+
+    location /api/ {
+        include proxy_params;
+        proxy_pass http://localhost:5002;
+    }
+
+}
+
